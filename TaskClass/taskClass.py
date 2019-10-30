@@ -5,7 +5,7 @@ import datetime
 class Task():
     """docstring for Task."""
 
-    def __init__(self, name, span, deadline, startline=datetime.datetime.now):
+    def __init__(self, name, span, deadline, startline=datetime.datetime.now()):
         self.name = name
         self.span = span
         self.deadline=deadline
@@ -13,8 +13,8 @@ class Task():
         self.start = None
         self.end = None
 
-    # Semua method Get() Set()
-    
+     #<Semua method Get() Set()>
+
     def getName(self):
         return self.name
 
@@ -50,3 +50,12 @@ class Task():
 
     def setEnd(self, end):
         self.end = end
+    # </Semua method Get() Set()>
+
+    def __str__(self):
+        return ("Name : "+str(self.name)
+                + "\nSpan : "+str(self.span)
+                + "\nDeadline  : "+str(self.deadline)
+                + "\nStartline : "+str(self.startline)
+                + "\nStart : "+str(self.start)
+                + "\nEnd : "+str(self.end))

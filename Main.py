@@ -1,7 +1,9 @@
 """
 This is the main class
 """
-from DataTask.Task import TaskN
+import datetime
+from TaskClass.taskClass import Task
 print("Successfully Started")
 
-belajarMD = TaskN("Belajar Matdas","2 Januari 2019",4,"4 Hour")
+belajarMD = Task("Belajar Matdas",30, "12 Januari 2020")
+print(belajarMD)
