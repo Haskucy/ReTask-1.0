@@ -7,6 +7,7 @@ from ListTask.listTask import ListTask
 
 #Setup : Needed Func
 def CheckTask() :
+    print("\nThis is your task right now : \n")
     for i in lstRendya.listTask:
         print(i.name + " -> Deadline : "+  str(i.deadline))
     print("\n\n")
@@ -39,7 +40,7 @@ def newTask():
     print("Successfully added task : " + CreateTask.name)
 
 #Setup : Started
-print("Successfully Started")
+print("\nSuccessfully Started\n")
 belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
 Mandi = Task("Mandi",30, "2019-11-01, 21:40:00")
 AljabarLinear = Task("Alin",120, "today, 21:40:00")
@@ -62,8 +63,8 @@ while x == True:
     elif mainApp == "2":
         newTask()
     elif mainApp == "3":
-        exit()
-        print("have a good day sir")
+        print("\nHave a good day sir")
         break
+        exit()
 
     texthello = "What do you want next?\n"
