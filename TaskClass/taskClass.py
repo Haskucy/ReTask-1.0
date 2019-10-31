@@ -3,7 +3,7 @@
 import datetime
 
 class Task():
-    """docstring for Task."""
+    """Ini adalah object setiap task yang ada."""
 
     def __init__(self, name, span, deadline, startline=datetime.datetime.now()):
         self.name = name

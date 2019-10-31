@@ -2,7 +2,7 @@ import datetime
 from TaskClass.taskClass import Task
 
 class ListTask():
-    """docstring for ListTask."""
+    """ini menyimpan task-task yang ada"""
 
     def __init__(self, listofTask=None):
         self.listTask = []
