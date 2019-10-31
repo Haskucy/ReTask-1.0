@@ -35,6 +35,7 @@ def DatetimeCount(input):
     set = se.split(".")
     second = str(set[0])
 
+
     hasil = int(year+month+dates+hour+minute+second)
 
     return hasil

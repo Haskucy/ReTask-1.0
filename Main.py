@@ -7,7 +7,7 @@ from ListTask.listTask import ListTask
 print("Successfully Started")
 
 belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
-Mandi = Task("Mandi",30, "2019-11-20 , 21:40:00")
+Mandi = Task("Mandi",30, "2019-11-01 , 21:40:00")
 AljabarLinear = Task("Alin",120, "today , 21:40:00")
 
 lstT = [belajarMD,Mandi,AljabarLinear]

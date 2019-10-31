@@ -1,4 +1,5 @@
 import datetime
+from UsefulFunc.datetimefunc import stringToDatetimeConverter, DatetimeCount
 
 #datetime(year,month,date,hour(24),minute,second,microsecond)
 x = datetime.datetime.today()
@@ -19,3 +20,8 @@ print(hasil)
 f = " today"
 ep = ("today" ==  f)
 print(ep)
+
+print(x)
+we = DatetimeCount(x)
+
+print(we)
