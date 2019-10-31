@@ -46,20 +46,24 @@ AljabarLinear = Task("Alin",120, "today, 21:40:00")
 lstT = [belajarMD,Mandi,AljabarLinear]
 lstRendya = ListTask(lstT)
 x = True
-print("Successfully Started")
-texthello ="Hello User, what do you want me to do?\n"
 
+#Real Stuff
+texthello ="Hello User, what do you want me to do?\n"
 while x == True:
     text1 = "1. Check your task\n"
     text2 = "2. Add new task\n"
     text3 = "3. Select task\n"
     text0 = "0. Exit\n"
-    textSelect = "Please choose based on number"
+    textSelect = "Please choose based on number\n"
     mainApp = str(input(texthello + text1 + text2 + text3 + text0 + textSelect))
 
     if mainApp == "1":
         CheckTask()
     elif mainApp == "2":
         newTask()
+    elif mainApp == "3":
+        exit()
+        print("have a good day sir")
+        break
 
     texthello = "What do you want next?\n"
