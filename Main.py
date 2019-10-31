@@ -5,7 +5,7 @@ import datetime
 from TaskClass.taskClass import Task
 from ListTask.listTask import ListTask
 
-#Setup
+#Setup : Needed Func
 def CheckTask() :
     for i in lstRendya.listTask:
         print(i.name + " -> Deadline : "+  str(i.deadline))
@@ -38,6 +38,7 @@ def newTask():
     lstRendya.listTask.append(CreateTask)
     print("Successfully added task : " + CreateTask.name)
 
+#Setup : Started
 print("Successfully Started")
 belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
 Mandi = Task("Mandi",30, "2019-11-01, 21:40:00")
@@ -45,9 +46,10 @@ AljabarLinear = Task("Alin",120, "today, 21:40:00")
 lstT = [belajarMD,Mandi,AljabarLinear]
 lstRendya = ListTask(lstT)
 x = True
+print("Successfully Started")
+texthello ="Hello User, what do you want me to do?\n"
 
 while x == True:
-    texthello ="Hello User, what do you want me to do?\n"
     text1 = "1. Check your task\n"
     text2 = "2. Add new task\n"
     text3 = "3. Select task\n"
@@ -59,3 +61,5 @@ while x == True:
         CheckTask()
     elif mainApp == "2":
         newTask()
+
+    texthello = "What do you want next?\n"
