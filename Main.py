@@ -39,6 +39,9 @@ def newTask():
     lstRendya.listTask.append(CreateTask)
     print("Successfully added task : " + CreateTask.name)
 
+def selectTask():
+    pass
+    
 #Setup : Started
 print("\nSuccessfully Started\n")
 belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
@@ -62,9 +65,10 @@ while x == True:
         CheckTask()
     elif mainApp == "2":
         newTask()
-    elif mainApp == "3":
+    elif mainApp == "3" :
+        selectTask()
+    elif mainApp == "0":
         print("\nHave a good day sir")
-        break
         exit()
 
     texthello = "What do you want next?\n"
