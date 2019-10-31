@@ -58,4 +58,5 @@ class Task():
                 + "\nDeadline  : "+str(self.deadline)
                 + "\nStartline : "+str(self.startline)
                 + "\nStart : "+str(self.start)
-                + "\nEnd : "+str(self.end))
+                + "\nEnd : "+str(self.end)
+                +"\n\n")
