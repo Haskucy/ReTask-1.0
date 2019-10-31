@@ -1,6 +1,7 @@
 """
 """
 import datetime
+from UsefulFunc.datetimefunc import stringToDatetimeConverter
 
 class Task():
     """Ini adalah object setiap task yang ada."""
@@ -8,7 +9,7 @@ class Task():
     def __init__(self, name, span, deadline, startline=datetime.datetime.now()):
         self.name = name
         self.span = span
-        self.deadline=deadline
+        self.deadline= stringToDatetimeConverter(deadline)
         self.startline =startline
         self.start = None
         self.end = None

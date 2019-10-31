@@ -6,9 +6,9 @@ from TaskClass.taskClass import Task
 from ListTask.listTask import ListTask
 print("Successfully Started")
 
-belajarMD = Task("Belajar Matdas",30, "12 Januari 2020")
-Mandi = Task("Mandi",30, "14 Januari 2020")
-AljabarLinear = Task("Alin",120, "13 Januari 2021")
+belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
+Mandi = Task("Mandi",30, "2019-11-20 , 21:40:00")
+AljabarLinear = Task("Alin",120, "today , 21:40:00")
 
 lstT = [belajarMD,Mandi,AljabarLinear]
 
