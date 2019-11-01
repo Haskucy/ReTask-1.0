@@ -8,9 +8,10 @@ from ReTask.ListTask.listTask import ListTask
 #Setup : Needed Func
 def CheckTask() :
     print("\nThis is your task right now : \n")
-    for i in lstRendya.listTask:
-        print(i.name + " -> Deadline : "+  str(i.deadline))
-    print("\n\n")
+    for i in range(len(lstRendya.listTask)):
+        c = lstRendya.listTask[i]
+        print(str(i+1) + ". " + c.name + " -> Deadline : "+  str(c.deadline))
+    print("\n")
 
 def newTask():
     textnew = "\nPlease insert your new task in this format :\n [name],[estimatedspan],[(deadline)]"
@@ -40,7 +41,10 @@ def newTask():
     print("Successfully added task : " + CreateTask.name)
 
 def selectTask():
-    print("\nSelect your task based on number: ")
+    CheckTask()
+    selectT = int(input("Select your task based on number:\n"))
+    theTask = lstRendya.listTask[selectT-1]
+    print(theTask)
 
 def sortTaskbyDeadline():
     lstRendya.sort()
