@@ -1,5 +1,5 @@
 import datetime
-from UsefulFunc.datetimefunc import stringToDatetimeConverter, DatetimeCount
+from ReTask.UsefulFunc.datetimefunc import stringToDatetimeConverter, DatetimeCount
 
 #datetime(year,month,date,hour(24),minute,second,microsecond)
 x = datetime.datetime.today()

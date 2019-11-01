@@ -1,7 +1,7 @@
 """
 """
 import datetime
-from UsefulFunc.datetimefunc import stringToDatetimeConverter
+from ReTask.UsefulFunc.datetimefunc import stringToDatetimeConverter
 
 class Task():
     """Ini adalah object setiap task yang ada."""

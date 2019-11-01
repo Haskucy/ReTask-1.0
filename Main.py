@@ -2,8 +2,8 @@
 This is the main class
 """
 import datetime
-from TaskClass.taskClass import Task
-from ListTask.listTask import ListTask
+from ReTask.TaskClass.taskClass import Task
+from ReTask.ListTask.listTask import ListTask
 
 #Setup : Needed Func
 def CheckTask() :
@@ -13,7 +13,7 @@ def CheckTask() :
     print("\n\n")
 
 def newTask():
-    textnew = "Please insert your new task in this format :\n [name],[estimatedspan],[(deadline)]"
+    textnew = "\nPlease insert your new task in this format :\n [name],[estimatedspan],[(deadline)]"
     textexample = 'Belajar Matdas, 30 minutes, today 21:00:00\n'
     newTask = input(textnew + "\nexample : " +textexample)
     separate1 = newTask.split(",")
@@ -40,8 +40,12 @@ def newTask():
     print("Successfully added task : " + CreateTask.name)
 
 def selectTask():
-    pass
-    
+    print("\nSelect your task based on number: ")
+
+def sortTaskbyDeadline():
+    lstRendya.sort()
+    print("\nSuccessfully sorted!")
+
 #Setup : Started
 print("\nSuccessfully Started\n")
 belajarMD = Task("Belajar Matdas",30, "today, 21:00:00")
@@ -57,9 +61,10 @@ while x == True:
     text1 = "1. Check your task\n"
     text2 = "2. Add new task\n"
     text3 = "3. Select task\n"
+    text4 = "4. Sort Task By Deadline\n"
     text0 = "0. Exit\n"
-    textSelect = "Please choose based on number\n"
-    mainApp = str(input(texthello + text1 + text2 + text3 + text0 + textSelect))
+    textSelect = "Please choose based on number:\n"
+    mainApp = str(input(texthello + text1 + text2 + text3 + text4 + text0 + textSelect))
 
     if mainApp == "1":
         CheckTask()
@@ -67,6 +72,8 @@ while x == True:
         newTask()
     elif mainApp == "3" :
         selectTask()
+    elif mainApp == "4":
+        sortTaskbyDeadline()
     elif mainApp == "0":
         print("\nHave a good day sir")
         exit()
