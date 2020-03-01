@@ -1,3 +1,4 @@
 0,Susun Rencana Basdat, 60 minutes, 2020-03-01 19:00:00
-1,Lihat TP SDA, 30 minutes, 2020-03-01 20:00:00
-2,Belajar POK, 120 minutes, 2020-03-01 22:00:00
+1,Makan, 30 minutes, 2020-03-01 19:30:00
+2,Lihat TP SDA, 30 minutes, 2020-03-01 20:00:00
+3,Belajar POK, 120 minutes, 2020-03-01 22:00:00

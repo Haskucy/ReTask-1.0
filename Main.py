@@ -92,6 +92,12 @@ while stateProgram == True:
     elif mainApp == "5":
         saveChanges()
     elif mainApp == "0":
+        print("Save Changes? (y/n)")
+        saveState = input()
+        
+        if saveState == "y":
+            saveChanges()
+
         print("\nHave a good day sir")
         exit()
 
