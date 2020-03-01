@@ -1,7 +1,6 @@
 from ReTask.TaskClass.taskClass import Task
 
-
-def ambilSemuaData() : #hanya untuk dari Main
+def ambilSemuaData() : 
     semuaDataTask = []
 
     with open("ReTask/Database/Database.txt", "r") as data:
@@ -38,4 +37,15 @@ def ambilSemuaData() : #hanya untuk dari Main
         semuaDataTask.append(thisTaskInstance)
 
     return semuaDataTask
+
+def saveChanges(taskList):
+    lstTask = taskList
+
+    with open("ReTask/Database/Database.txt", "w") as writeD:
+        text = ""
+        for i in range(len(lstTask)):
+            text = text + str(i) +"," + lstTask[i].getName() + ", " + str(lstTask[i].getSpan()) +" minutes, " + str(lstTask[i].getDeadline()) + "\n"
+        
+        writeD.write(text)
+
 

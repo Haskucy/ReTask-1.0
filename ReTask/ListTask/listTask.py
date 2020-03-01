@@ -6,10 +6,9 @@ from ReTask.UsefulFunc.datetimefunc import DatetimeCount
 class ListTask():
     """ini menyimpan task-task yang ada"""
 
-    #listTask = [berisi Tasks]
+    listTask = []
 
     def __init__(self, listofTask=None):
-        self.listTask = []
         if listofTask is not None:
             for i in listofTask:
                 self.listTask.append(i)
@@ -43,4 +42,4 @@ class ListTask():
         else :
             index = num - 1
             yangDiDelete = self.listTask.pop(index)
-            print("Task " + yangDiDelete.getName() +" sudah di delete.")
+            print("Task " + yangDiDelete.getName() +" is deleted.")
