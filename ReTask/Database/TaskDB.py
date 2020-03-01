@@ -39,4 +39,3 @@ def ambilSemuaData() : #hanya untuk dari Main
 
     return semuaDataTask
 
-ambilSemuaData()
